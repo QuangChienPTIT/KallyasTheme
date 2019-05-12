@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu',sans-serif !important;
+    
+}
+body{
+    background-color: #ebebee;
+}
+
+body .container-fluid{
+    margin:0px;
+    padding:0px;
+}
+
+.my-header{
+    background-image: url(../img/kallyas-landingpage.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.my-header nav{
+    background-color:#fff;
+    padding: 0px 30px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    transition: .5s;
+}
+
+.my-header nav.menu-small {
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.my-header .nav-item .nav-link{
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.my-header .nav-item {
+    margin: 0px 10px;
+}
+
+li.nav-item.nav-cart {
+    position: relative;
+}
+
+li.nav-item.nav-cart:before {
+    color: white;
+    content: attr(data-count);
+    position: absolute;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: -8px;
+    width: 20px;
+    background-color: orange;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.my-header .nav-item .nav-link {
+    color: black;
+}
+
+.my-header .nav-item.active {
+    color: #333;
+    border-bottom: solid 3px #333;
+}
+
+li.nav-item a.btn.btn-dark {
+    border-radius: 50px;
+    padding: 7px 20px;
+}
+
+.my-header .header-content{
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    width: 500px;
+    top:25%;
+    left: 10%;
+}
+
+.my-header .header-content .header-title{
+    font-size: 60px;
+}
+
+.my-header .header-content .header-text{
+    font-size: 20px;
+}
+.my-header .header-content button{
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+.my-header .header-content button:hover{
+    background-color: #fff;
+}
+
+.content-1-gallery .gallery-img{
+    height: 300px;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.content-1-gallery .gallery-img::before{
+    content: '';
+    position: absolute;
+    background-image: url(https://picsum.photos/600/400);
+    background-position: center;
+    top:-10%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    transition: 0.7s;
+}
+.content-1-gallery .gallery-img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px #333;
+}
+.content-1-gallery .gallery-img:hover:before{
+    transform: scale(.95);
+}
+
+.context{
+    width: 50%;
+}
+
+.context h4{
+    font-weight: 300;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.context h4:before{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: rgb(153, 111, 63);
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+}
+.content-2{
+    box-shadow: -1px 0px 1px #fff;
+}
+.content-2 div {
+    margin:0px;
+    padding:0px;
+}
+
+.content-2 img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-2 .row{
+    /* height: 400px; */
+}
+
+.bg-yellow{
+    background-color: #f4f0eb;
+}
+
+.content-2 .content-left{
+    height: 800px;
+    margin-top: -400px;
+    background-image: url(../img/thumbnail-6.jpg);
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+}
+
+.content-2 .content-left .context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50%;
+}
+
+body .row{
+    margin:0px;
+    padding:0px;
+}
+
+.context {
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.context h2{
+    font-size:40px;
+    font-weight: 300;
+}
+.content-3-left{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.context-component{
+    display: flex;
+    
+}
+
+.content-4{
+    background-color: #171717;
+    padding: 2rem 0px;
+}
+
+.content-3 .context{
+    width: 100%;
+}
+
+.content-4 .price span{
+    color:#c89d28;
+    font-weight: 300;
+    font-family: 'Lato',sans-serif !important;
+    position: relative;
+}
+
+.content-4 .price {
+    position: relative;
+}
+
+.content-4 .price span:nth-child(1) {
+    position: relative;
+    top: -35px;
+}
+.content-4 div button{
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.content-4 > div >  div:nth-child(1),.content-4 > div >  div:nth-child(2){
+    border-right: solid 1px rgba(109, 109, 109, 0.247);
+}
+
+.laster{
+    position: relative;
+}
+
+.laster .bg-last{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.laster .bg-last img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.laster .laster-type{
+    font-size: 10px;
+    position: absolute;
+    background: #614f1c;
+    color: #fff;
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    height: 21px;
+}
+
+.laster .last-main-content{
+    position: absolute;
+    width: 70%;
+    color: #fff;
+}
+
+.laster .last-main-content a{
+    color:#c89d28;
+}
+
+.laster.laster-com .bg-last{
+    height: 163px;
+}
+
+.laster.laster-main{
+    height: 550px;    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.content-5{
+    background-color: #ebebee;
+}
+.content-5 button{
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+#buttonOpenSans{
+    font-size: 12px;
+    font-family:'Open Sans',sans-serif;
+    color:black;
+    font-weight: 700;
+}
+
+
+
+
